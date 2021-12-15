@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <body>
+        
+        <a-scene >
+            <a-entity position="5 8 20">
+                <a-camera></a-camera>
+            </a-entity>
+            <a-assets timeout="10000">
+
+                <a-asset-item id="cow" src="./cow/scene.gltf"></a-asset-item>      
+          
+          
+              </a-assets>
+            <a-sky src="https://upload.wikimedia.org/wikipedia/commons/1/16/Appearance_of_sky_for_weather_forecast%2C_Dhaka%2C_Bangladesh.JPG"></a-sky>
+            <a-box
+
+                position="5 8 -4"
+                rotation="0 0 0"
+                width="20"
+                height="13"
+                color="green"
+            >
+            <a-circle position="-0.4 -7 -25" rotation="-90 0 0" radius="100" shadow="receive: true" visible="true"
+            color="#2E6F10">
+
+            </a-box>
+            <a-box position="5 1.5 2.3" rotation="-90 0 0" width="20" height="13" color="blue"></a-box>
+            <a-box position="15 7 2" width="13" height="15" color="blue" rotation="0 -90 0"></a-box>
+            <a-box position="-5 7 2" width="13" height="15" color="blue" rotation="0 -90 0"></a-box>
+            <a-plane src="https://rukminim1.flixcart.com/image/416/416/k6v2ykw0/poster/v/v/h/large-designer-wall-poster-if-you-can-dream-it-you-can-achieve-original-imafp86mvcxzvzar.jpeg?q=70" position="5 8 -3" width="4" height="6"></a-plane>
+            <a-plane src="https://rukminim1.flixcart.com/image/416/416/jingcy80/poster/g/h/m/large-po-060-rajasthan-painting-poster-decorative-wall-poster-original-imaf6erdh5hpqwhf.jpeg?q=70" position="0 8 -3" width="4" height="6"></a-plane>
+            <a-plane src="https://rukminim1.flixcart.com/image/416/416/poster/q/u/g/do-your-best-and-forget-the-rest-wall-poster-quotes-motivation-original-imaeqyz6jfjayxzp.jpeg?q=70" position="10 8 -3" width="4" height="6"></a-plane>
+            <a-plane position="-5 14.5 2.3" rotation="-90 0 0" width="20" height="13" color="red"></a-plane>
+            <a-cylinder src="https://img1.cgtrader.com/items/2754721/9eb336446b/large/fancy-chair-3d-model-low-poly-obj-fbx-blend-dae.jpg" position="5 1.2 2.3"></a-cylinder>
+        <a-cylinder position="5 11 0" radius="0.3" height="5" color="cyan"></a-cylinder>
+        <a-cone position="5 9 0"color="red"></a-cone>
+        <a-cylinder position="5 1.2 2.3" radius="0.3" height="9" color="orange"></a-cylinder>
+        <a-circle position="5 6.2 4.3" radius="5" rotation="-90 0 0" height="1" color="orange"></a-circle>
+        <a-entity>
+            <a-entity position="-0.4 -7 -5" rotation="0 55 0" scale="0.05 0.05 0.05" gltf-model="#cow" shadow="cast: true;">
+            </a-entity>
+          </a-entity>
+
+
+    </a-scene>
+    </body>
+</head>
